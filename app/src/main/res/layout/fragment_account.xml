@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment"
+    android:layout_marginBottom="8dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/background_account">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/account_header"
+                android:textColor="@color/white2"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/welcome"
+                android:src="@drawable/nav_account"
+                app:tint="@color/white2" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Username"
+                android:textColor="@color/white2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="12dp"
+                android:text="user@email.com"
+                android:textColor="@color/white2"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/SettingsItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/background_settings_tabs"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:paddingHorizontal="8dp"
+                    android:contentDescription="@string/view_more"
+                    android:src="@drawable/account_email"
+                    app:tint="@color/purple" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="12dp">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="start|top"
+                        android:paddingHorizontal="8dp"
+                        android:text="@string/hint_email"
+                        android:textSize="16sp"
+                        android:textColor="@color/muted_black" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|bottom"
+                        android:paddingHorizontal="8dp"
+                        android:text="user@email.com"
+                        android:textSize="13sp"
+                        android:textColor="@color/muted_black" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageEditEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end|center"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/view_more"
+                    android:paddingHorizontal="8dp"
+                    android:src="@drawable/task_edit"
+                    app:tint="@color/purple" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="1dp"
+                android:background="@color/purple_500" />
+
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="1dp"
+                android:background="@color/purple_500" />
+
+            <LinearLayout
+                android:id="@+id/passwordChange"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/background_settings_tabs"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:paddingHorizontal="8dp"
+                    android:contentDescription="@string/view_more"
+                    android:src="@drawable/account_password"
+                    app:tint="@color/purple" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="12dp">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="start|top"
+                        android:paddingHorizontal="8dp"
+                        android:text="@string/hint_password"
+                        android:textSize="16sp"
+                        android:textColor="@color/muted_black" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|bottom"
+                        android:paddingHorizontal="8dp"
+                        android:text="********************"
+                        android:textSize="13sp"
+                        android:textColor="@color/muted_black" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageChangePasswordArrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/view_more"
+                    android:paddingHorizontal="8dp"
+                    android:src="@drawable/nav_settings_arrow"
+                    app:tint="@color/purple" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
