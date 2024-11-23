@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyFragment"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ppolicy_header"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="20dp"
+        android:text="@string/ppolicy_intro"
+        android:textSize="14sp"
+        android:textColor="@color/muted_black"/>
+
+
+    <LinearLayout
+        android:id="@+id/PrivacyPolicyItems"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/background_privacy_tabs"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ppolicy1"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/view_more"
+                android:src="@drawable/privacy_add"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/background_privacy_tabs"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ppolicy2"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/view_more"
+                android:src="@drawable/privacy_add"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/background_privacy_tabs"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ppolicy3"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/view_more"
+                android:src="@drawable/privacy_add"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/background_privacy_tabs"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ppolicy4"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/view_more"
+                android:src="@drawable/privacy_add"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/background_privacy_tabs"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ppolicy5"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/view_more"
+                android:src="@drawable/privacy_add"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/PrivacyPolicyItems"
+        android:text="@string/label_privacy_policy"
+        android:textAlignment="textEnd"
+        android:textColor="@color/muted_black"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
