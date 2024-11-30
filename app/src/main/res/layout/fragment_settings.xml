@@ -107,7 +107,7 @@
                     android:paddingHorizontal="8dp"
                     android:text="@string/settings_language"
                     android:textColor="@color/muted_black"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -157,10 +157,9 @@
                     android:layout_width="20dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center|end"
-                    android:layout_weight="1"
                     android:paddingHorizontal="8dp"
-                    android:text="."
-                    app:tint="@color/purple" />
+                    app:tint="@color/purple"
+                    android:layout_weight="1"/>
             </LinearLayout>
 
             <View
